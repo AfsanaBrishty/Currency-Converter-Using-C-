@@ -1,0 +1,9 @@
+E:\AAllAboutStudy\MY3.2\SDLab\Assignment\Currency Converter\bin\Debug\Currency Converter.exe.config
+E:\AAllAboutStudy\MY3.2\SDLab\Assignment\Currency Converter\bin\Debug\Currency Converter.exe
+E:\AAllAboutStudy\MY3.2\SDLab\Assignment\Currency Converter\bin\Debug\Currency Converter.pdb
+E:\AAllAboutStudy\MY3.2\SDLab\Assignment\Currency Converter\obj\Debug\Currency Converter.csprojAssemblyReference.cache
+E:\AAllAboutStudy\MY3.2\SDLab\Assignment\Currency Converter\obj\Debug\Currency_Converter.MyForm.resources
+E:\AAllAboutStudy\MY3.2\SDLab\Assignment\Currency Converter\obj\Debug\Currency_Converter.Properties.Resources.resources
+E:\AAllAboutStudy\MY3.2\SDLab\Assignment\Currency Converter\obj\Debug\Currency Converter.csproj.GenerateResource.cache
+E:\AAllAboutStudy\MY3.2\SDLab\Assignment\Currency Converter\obj\Debug\Currency Converter.exe
+E:\AAllAboutStudy\MY3.2\SDLab\Assignment\Currency Converter\obj\Debug\Currency Converter.pdb
