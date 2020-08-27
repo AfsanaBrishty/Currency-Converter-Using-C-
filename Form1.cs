@@ -48,31 +48,33 @@ namespace Currency_Converter
         {
             int i = int.Parse(enter_amount_textbox.Text);
 
-            if(convert_to_combobox.SelectedItem== "Rupee")
+
+            string selected_item_text = convert_to_combobox.GetItemText(convert_to_combobox.SelectedItem);
+            if (selected_item_text == "Rupee")
             {
                 double convert = (i * 0.88);
                 result_box.Text = "Converted amount in Rupee: " + convert;
 
             }
-            if (convert_to_combobox.SelectedItem == "USD")
+            if (selected_item_text == "USD")
             {
                 double convert = (i * 0.012);
                 result_box.Text = "Converted amount in USD: " + convert;
 
             }
-            if (convert_to_combobox.SelectedItem == "Euro")
+            if (selected_item_text == "Euro")
             {
                 double convert = (i * 0.0100);
                 result_box.Text = "Converted amount in Euro: " + convert;
 
             }
-            if (convert_to_combobox.SelectedItem == "Canadian Dollar")
+            if (selected_item_text == "Canadian Dollar")
             {
                 double convert = (i * 0.016);
                 result_box.Text = "Converted amount in Canadian Dollar: " + convert;
 
             }
-            if (convert_to_combobox.SelectedItem == "Australian Dollar")
+            if (selected_item_text == "Australian Dollar")
             {
                 double convert = (i * 0.016);
                 result_box.Text = "Converted amount in Australian Dollar: " + convert;
