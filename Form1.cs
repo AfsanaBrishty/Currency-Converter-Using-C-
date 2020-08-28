@@ -46,39 +46,45 @@ namespace Currency_Converter
 
         private void convert_btn_Click(object sender, EventArgs e)
         {
-            int i = int.Parse(enter_amount_textbox.Text);
-
-
-            string selected_item_text = convert_to_combobox.GetItemText(convert_to_combobox.SelectedItem);
-            if (selected_item_text == "Rupee")
+            try
             {
-                double convert = (i * 0.88);
-                result_box.Text = "Converted amount in Rupee: " + convert;
+                int i = int.Parse(enter_amount_textbox.Text);
 
-            }
-            if (selected_item_text == "USD")
+
+                string selected_item_text = convert_to_combobox.GetItemText(convert_to_combobox.SelectedItem);
+                if (selected_item_text == "Rupee")
+                {
+                    double convert = (i * 0.88);
+                    result_box.Text = "Converted amount in Rupee: " + convert;
+
+                }
+                if (selected_item_text == "USD")
+                {
+                    double convert = (i * 0.012);
+                    result_box.Text = "Converted amount in USD: " + convert;
+
+                }
+                if (selected_item_text == "Euro")
+                {
+                    double convert = (i * 0.0100);
+                    result_box.Text = "Converted amount in Euro: " + convert;
+
+                }
+                if (selected_item_text == "Canadian Dollar")
+                {
+                    double convert = (i * 0.016);
+                    result_box.Text = "Converted amount in Canadian Dollar: " + convert;
+
+                }
+                if (selected_item_text == "Australian Dollar")
+                {
+                    double convert = (i * 0.016);
+                    result_box.Text = "Converted amount in Australian Dollar: " + convert;
+
+                }
+            }catch(Exception ex)
             {
-                double convert = (i * 0.012);
-                result_box.Text = "Converted amount in USD: " + convert;
-
-            }
-            if (selected_item_text == "Euro")
-            {
-                double convert = (i * 0.0100);
-                result_box.Text = "Converted amount in Euro: " + convert;
-
-            }
-            if (selected_item_text == "Canadian Dollar")
-            {
-                double convert = (i * 0.016);
-                result_box.Text = "Converted amount in Canadian Dollar: " + convert;
-
-            }
-            if (selected_item_text == "Australian Dollar")
-            {
-                double convert = (i * 0.016);
-                result_box.Text = "Converted amount in Australian Dollar: " + convert;
-
+                MessageBox.Show(ex.Message);
             }
         }
 
