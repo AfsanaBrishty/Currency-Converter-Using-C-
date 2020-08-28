@@ -29,7 +29,7 @@ namespace Currency_Converter
 
         private void result_box_TextChanged(object sender, EventArgs e)
         {
-
+            result_box.ReadOnly = true;
         }
 
         private void Converted_Value_label_Click(object sender, EventArgs e)
